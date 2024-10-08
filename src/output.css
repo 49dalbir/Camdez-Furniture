@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -659,12 +693,8 @@ video {
   height: 2rem;
 }
 
-.h-\[100em\] {
-  height: 100em;
-}
-
-.h-\[45em\] {
-  height: 45em;
+.h-\[35em\] {
+  height: 35em;
 }
 
 .h-\[540px\] {
@@ -673,6 +703,10 @@ video {
 
 .h-\[560px\] {
   height: 560px;
+}
+
+.h-\[65em\] {
+  height: 65em;
 }
 
 .h-\[70em\] {
@@ -691,22 +725,6 @@ video {
   height: 100%;
 }
 
-.h-\[80em\] {
-  height: 80em;
-}
-
-.h-\[60em\] {
-  height: 60em;
-}
-
-.h-\[35em\] {
-  height: 35em;
-}
-
-.h-\[65em\] {
-  height: 65em;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -715,28 +733,16 @@ video {
   width: 2rem;
 }
 
+.w-\[45em\] {
+  width: 45em;
+}
+
 .w-\[75em\] {
   width: 75em;
 }
 
 .w-auto {
   width: auto;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[20em\] {
-  width: 20em;
-}
-
-.w-\[40em\] {
-  width: 40em;
-}
-
-.w-\[45em\] {
-  width: 45em;
 }
 
 .-translate-x-full {
@@ -1064,8 +1070,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-gray-800:hover {
@@ -1129,10 +1147,6 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:justify-around {
-    justify-content: space-around;
   }
 
   .lg\:justify-evenly {
