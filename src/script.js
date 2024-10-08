@@ -31,10 +31,10 @@ const productFigures = productGrid.querySelectorAll('figure');
 function addHoverEffect(event) {
     const img = event.currentTarget.querySelector('img');
     const caption = event.currentTarget.querySelector('figcaption');
-    
+
     img.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
     caption.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
-    
+
     img.style.transform = 'scale(1.08)';
     caption.style.transform = 'scale(1.08)';
 }
@@ -43,7 +43,7 @@ function addHoverEffect(event) {
 function removeHoverEffect(event) {
     const img = event.currentTarget.querySelector('img');
     const caption = event.currentTarget.querySelector('figcaption');
-    
+
     img.style.transform = 'scale(1)';
     caption.style.transform = 'scale(1)';
 }
@@ -54,37 +54,63 @@ productFigures.forEach(figure => {
     figure.addEventListener('mouseleave', removeHoverEffect);
 
     figure.addEventListener('click', () => {
-        // Create a larger and centered popup message
-        const cartMessage = document.createElement('div');
-        cartMessage.innerText = 'Item added to cart';
-        cartMessage.style.position = 'fixed';
-        cartMessage.style.top = '50%';
-        cartMessage.style.left = '50%';
-        cartMessage.style.transform = 'translate(-50%, -50%)';
-        cartMessage.style.backgroundColor = '#333';
-        cartMessage.style.color = '#fff';
-        cartMessage.style.padding = '20px 40px';
-        cartMessage.style.borderRadius = '10px';
-        cartMessage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
-        cartMessage.style.fontSize = '24px';
-        cartMessage.style.opacity = '0';
-        cartMessage.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        const processingMessage = document.createElement('div');
+        processingMessage.innerText = 'Processing...';
+        processingMessage.style.position = 'fixed';
+        processingMessage.style.top = '50%';
+        processingMessage.style.left = '50%';
+        processingMessage.style.transform = 'translate(-50%, -50%)';
+        processingMessage.style.backgroundColor = '#333';
+        processingMessage.style.color = '#fff';
+        processingMessage.style.padding = '20px 40px';
+        processingMessage.style.borderRadius = '10px';
+        processingMessage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+        processingMessage.style.fontSize = '24px';
+        processingMessage.style.opacity = '0';
+        processingMessage.style.transition = 'opacity 0.5s ease';
 
-        document.body.appendChild(cartMessage);
+        document.body.appendChild(processingMessage);
 
-        // Fade in the popup message
         setTimeout(() => {
-            cartMessage.style.opacity = '1';
-            cartMessage.style.transform = 'translate(-50%, -50%) scale(1.1)';
+            processingMessage.style.opacity = '1';
         }, 50);
 
-        // Fade out and remove the message after 3 seconds
         setTimeout(() => {
-            cartMessage.style.opacity = '0';
-            cartMessage.style.transform = 'translate(-50%, -50%) scale(1)';
+            processingMessage.style.opacity = '0';
+
             setTimeout(() => {
-                cartMessage.remove();
+                processingMessage.remove();
+
+                const cartMessage = document.createElement('div');
+                cartMessage.innerText = 'Item added to cart';
+                cartMessage.style.position = 'fixed';
+                cartMessage.style.top = '50%';
+                cartMessage.style.left = '50%';
+                cartMessage.style.transform = 'translate(-50%, -50%)';
+                cartMessage.style.backgroundColor = '#333';
+                cartMessage.style.color = '#fff';
+                cartMessage.style.padding = '20px 40px';
+                cartMessage.style.borderRadius = '10px';
+                cartMessage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+                cartMessage.style.fontSize = '24px';
+                cartMessage.style.opacity = '0';
+                cartMessage.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+                document.body.appendChild(cartMessage);
+
+                setTimeout(() => {
+                    cartMessage.style.opacity = '1';
+                    cartMessage.style.transform = 'translate(-50%, -50%) scale(1.1)';
+                }, 50);
+
+                setTimeout(() => {
+                    cartMessage.style.opacity = '0';
+                    cartMessage.style.transform = 'translate(-50%, -50%) scale(1)';
+                    setTimeout(() => {
+                        cartMessage.remove();
+                    }, 500);
+                }, 3000);
             }, 500);
-        }, 3000);
+        }, 1500);
     });
 });
