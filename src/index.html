@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camdez Furniture</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-franklin">
+    <header class="flex justify-between mt-8 ml-20 mr-20 relative z-10 max-lg:mx-4">
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        <h1 id="site-title"
+            class="text-[30px] lg:text-[40px] font-bebas max-sm:text-center max-lg:text-center lg:flex-none max-sm:ml-10">
+            <a href="index.html">Camdez Furniture</a>
+        </h1>
+        <div>
+            <ul id="nav-menu" class="lg:flex md:flex gap-10 pr-44 mt-4 text-[18px] hidden">
+                <li><a href="pages/shop.html">Shop</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="cart" class="mt-4">
+            <img src="assets/cart-svgrepo-com.svg" alt="cart" class="w-8 h-8">
+        </div>
+    </header>
+
+    <div id="mobile-sidebar"
+        class="fixed left-0 top-0 w-64 h-full bg-white text-black p-4 transform -translate-x-full transition-transform duration-300 z-20 md:hidden">
+        <button id="close-btn" class="text-2xl mb-4">✕</button>
+        <ul class="space-y-4">
+            <li><a href="pages/shop.html" class="hover:text-gray-400">Shop</a></li>
+            <li><a href="pages/about.html" class="hover:text-gray-400">About</a></li>
+            <li><a href="pages/contact.html" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden z-10 md:hidden"></div>
+
+    <main>
+        <div id="collection" class="ml-20 mr-20 rounded-3xl">
+            <figure class="pt-20 max-md:pt-10 flex flex-col items-end rounded-3xl max-lg:items-center">
+                <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925678-ZLJDBYGIRH10WPNWD1S5/image-asset.jpeg"
+                    alt="furniture" class="w-auto h-[540px] max-lg:h-[150px] object-contain rounded-3xl">
+                <figcaption class="lg:mt-2 max-md:mt-0 lg:mr-[11.3em] font-bebas text-[40px] max-lg:text-[20px]">
+                    <h2>Collection 01 - <a href="pages/shop.html"><span
+                                class="text-[#808080] underline max-md-text-center">Work from Home</span></a></h2>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="main-title" class="ml-20 mr-20">
+            <h2 class="text-[230px] max-lg:text-[100px] max-lg:text-center max-md:hidden font-bebas pt-20">Camdez
+                Furniture</h2>
+        </div>
+
+        <div id="shop-category" class="pt-20">
+            <h3 class="text-[60px] max-lg:text-[30px] font-bebas ml-20 mr-20 text-center max-lg:mx-4">Shop by category
+            </h3>
+        </div>
+
+        <div id="product-grid"
+            class="flex lg:justify-evenly pt-16 max-lg:flex-wrap max-lg:pt-20 max-lg:gap-4 max-lg:items-center max-lg:mx-14">
+            <div id="category-seating" class="mx-4">
+                <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925691-ADKAI9JF0A5R3CZC6V6Z/Stocksy_comp_2739192.jpg"
+                    alt="seating" class="w-auto h-[35em] max-lg:h-[15em] object-contain">
+                <h4 class="font-bebas text-[45px] pt-8">Seating</h4>
+                <p class="font-franklin text-[20px] lg:pt-8 underline">Shop Seating</p>
+            </div>
+            <div id="category-table" class="mx-4 max-lg:px-4">
+                <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925699-ENVHT2U28RIEM6SLANM0/Stocksy_comp_3694314+%281%29.jpg"
+                    alt="table" class="w-auto h-[65em] max-lg:h-[40em] object-contain">
+                <h4 class="font-bebas text-[45px] pt-8">Table</h4>
+                <p class="font-franklin text-[20px] lg:pt-8 underline">Shop Table</p>
+            </div>
+        </div>
+
+        <div id="our-story"
+            class="flex flex-col lg:flex-row justify-between ml-20 mr-20 lg:pt-32 pb-40 border-b-[1px] border-b-black gap-4">
+            <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925722-X94ERX0XI5JIBRJNJ35U/image-asset.jpeg"
+                alt="story" class="w-auto h-[540px] max-lg:hidden rounded-3xl object-contain">
+            <div class="lg:pt-40 lg:pl-20">
+                <h3 class="text-[40px] font-bebas pr-14 max-lg:pt-40">Our Story</h3>
+                <p class="font-franklin text-[16px] pt-8 pr-14 pb-8">At Camdez Furniture, we believe that furniture is
+                    more than just functional items; it's an essential part of creating a home filled with warmth and
+                    personality...</p>
+                <a id="read-more" class="font-franklin text-[16px] underline text-[#808080]"
+                    href="pages/about.html">Read More</a>
+            </div>
+        </div>
+
+        <div id="kenmore-chair" class="flex max-lg:flex-col justify-between ml-20 mr-20 mb-40 mt-20 gap-10">
+            <div>
+                <h2 class="text-[230px] max-lg:text-[100px] font-bebas pt-20 leading-none">Kenmore Chair</h2>
+                <a href="#" class="font-franklin text-[16px] underline text-[#808080]">Shop the Kenmore Chair</a>
+            </div>
+            <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925728-3QPNN6L0OVPRMQCERVM4/Stocksy_comp_2738595.jpg"
+                alt="kenmore chair" class="w-auto h-[75em] max-lg:h-[40em] object-contain pt-20">
+        </div>
+    </main>
+
+    <footer id="footer" class="bg-[#b6b6b6] flex justify-between pt-20 pb-20 max-lg:flex-col">
+        <h2 class="ml-20 text-[60px] font-bebas max-lg:text-center max-lg:ml-0 max-lg:text-[40px]">Camdez Furniture</h2>
+        <div id="footer-links"
+            class="flex lg:mr-20 font-franklin text-[18px] underline text-[#5f5f5f] gap-8 max-lg:justify-center">
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="#">Follow</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

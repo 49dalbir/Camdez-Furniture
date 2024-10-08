@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camdez Furitures</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-franklin">
+    <header id="header" class="flex justify-between mt-8 ml-20 mr-20 relative z-10 max-lg:mx-4">
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        <h1 id="logo"
+            class="text-[30px] lg:text-[40px] font-bebas max-sm:text-center max-lg:text-center lg:flex-none max-sm:ml-10">
+            <a href="../index.html">camdez furniture</a>
+        </h1>
+        <div id="navbar">
+            <ul class="lg:flex md:flex gap-10 pr-44 mt-4 text-[18px] hidden">
+                <li id="shop-link"><a href="shop.html">Shop</a></li>
+                <li id="about-link" class="font-bold"><a href="about.html">About</a></li>
+                <li id="contact-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="cart-icon" class="mt-4">
+            <img src="../assets/cart-svgrepo-com.svg" alt="cart" class="w-8 h-8">
+        </div>
+    </header>
+
+    <!-- Sidebar for mobile and tablet -->
+    <div id="mobile-sidebar"
+        class="fixed left-0 top-0 w-64 h-full bg-white text-black p-4 transform -translate-x-full transition-transform duration-300 z-20 md:hidden">
+        <button id="close-btn" class="text-2xl mb-4">✕</button>
+        <ul id="mobile-menu" class="space-y-4">
+            <li id="mobile-shop-link"><a href="shop.html" class="hover:text-gray-400">Shop</a></li>
+            <li id="mobile-about-link"><a href="about.html" class="hover:text-gray-400">About</a></li>
+            <li id="mobile-contact-link"><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden z-10 md:hidden"></div>
+
+    <main>
+        <h2 id="since-2004"
+            class="text-[230px] font-bebas pt-20 leading-none ml-20 mr-20 pb-20 max-lg:text-[60px] max-lg:ml-4">Since
+            2004</h2>
+        <figure id="main-image" class="items-center">
+            <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102908389-F2ATW2FFOAWPOPSGRTA9/chair02.png"
+                alt="bg" class="object-cover">
+        </figure>
+        <h2 id="meet-camdez"
+            class="text-[230px] font-bebas pt-20 leading-none ml-20 mr-20 pb-20 text-right max-lg:text-[60px] max-lg:mr-4">
+            Meet the camdez's</h2>
+        <div id="our-story" class="ml-20 mr-20 max-lg:mx-4">
+            <h3 id="story-title" class="text-[60px] font-bebas max-lg:text-[60px]">Our Story</h3>
+            <p id="story-text" class="font-franklin text-[20px] pt-8 max-lg:text-[14px]">
+                At Camdez Furniture, we believe that furniture is more than just functional items; it's an essential<br>
+                part of creating a home filled with warmth and personality. Founded in 2004, our journey began with
+                a<br>
+                simple vision: to provide high-quality, stylish, and sustainable furniture that caters to diverse
+                tastes<br>
+                and lifestyles. Inspired by the beauty of craftsmanship and the art of design, we carefully curate
+                each<br>
+                piece to ensure it reflects our commitment to quality and innovation. Our passion for creating
+                inviting<br>
+                spaces drives us to source materials ethically and work with skilled artisans who share our
+                dedication<br>
+                to excellence. Whether you're furnishing a cozy apartment or a spacious family home, Camdez Furniture
+                is<br>
+                here to help you transform your vision into reality, one piece at a time. Join us as we continue to<br>
+                shape homes and foster connections, making every moment spent with loved ones truly special.
+            </p>
+        </div>
+        <div id="our-philosophy" class="ml-20 mr-20">
+            <div id="philosophy-image-container" class="flex justify-end pt-60">
+                <figure id="philosophy-image">
+                    <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102925722-X94ERX0XI5JIBRJNJ35U/image-asset.jpeg"
+                        alt="story" class="w-auto h-[560px] max-lg:hidden rounded-3xl object-contain">
+                </figure>
+            </div>
+            <div id="philosophy-text" class="float-right pr-[4.5rem] mb-40 max-lg:hidden">
+                <h3 class="text-[60px] font-bebas pb-8 pt-20 max-lg:text-[60px]">Our Philosophy</h3>
+                <p class="font-franklin text-[20px]">
+                    At Camdez Furniture, we believe that great design enhances everyday living. Our <br>
+                    philosophy centers on creating beautiful, functional furniture using sustainable <br>
+                    materials. We strive to offer a diverse range of styles, allowing our customers <br>
+                    to express their unique identities while fostering a harmonious relationship between<br>
+                    style and the environment.
+                </p>
+            </div>
+        </div>
+        <div id="story-image" class="ml-20 mr-20 max-lg:mx-4">
+            <figure class="items-center">
+                <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102908403-C4BDIJLMTCGJ4EXR5SRE/Stocksy_comp_3694332+2.jpg"
+                    alt="story" class="rounded-3xl object-contain">
+            </figure>
+        </div>
+        <h2 id="shop-link-end" class="text-[230px] font-bebas lg:pt-20 leading-none ml-20 mr-20 pb-60 max-lg:mx-4"><a
+                class="border-b-[2px] border-b-black max-lg:text-[60px]" href="shop.html">shop furniture</a></h2>
+    </main>
+
+    <footer id="footer" class="bg-[#b6b6b6] flex justify-between pt-20 pb-20 max-lg:flex-col">
+        <h2 id="footer-logo" class="ml-20 text-[60px] font-bebas max-lg:text-center max-lg:ml-0 max-lg:text-[40px]">
+            camdez furniture</h2>
+        <div id="footer-links"
+            class="flex lg:mr-20 font-franklin text-[18px] underline text-[#5f5f5f] gap-8 max-lg:justify-center">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="">Follow</a>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
