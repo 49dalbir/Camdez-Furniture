@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camdez Furitures</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-franklin">
+    <header id="header" class="flex justify-between mt-8 ml-20 mr-20 relative z-10 max-lg:mx-4">
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        <h1 id="logo"
+            class="text-[30px] lg:text-[40px] font-bebas max-sm:text-center max-lg:text-center lg:flex-none max-sm:ml-10">
+            <a href="../index.html">camdez furniture</a>
+        </h1>
+        <div id="navbar">
+            <ul class="lg:flex md:flex gap-10 pr-44 mt-4 text-[18px] hidden">
+                <li id="shop-link"><a href="shop.html">Shop</a></li>
+                <li id="about-link" class="font-bold"><a href="about.html">About</a></li>
+                <li id="contact-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="cart-icon" class="mt-4">
+            <img src="../assets/cart-svgrepo-com.svg" alt="cart" class="w-8 h-8">
+        </div>
+    </header>
+
+    <!-- Sidebar for mobile and tablet -->
+    <div id="mobile-sidebar"
+        class="fixed left-0 top-0 w-64 h-full bg-white text-black p-4 transform -translate-x-full transition-transform duration-300 z-20 md:hidden">
+        <button id="close-btn" class="text-2xl mb-4">✕</button>
+        <ul id="mobile-menu" class="space-y-4">
+            <li id="mobile-shop-link"><a href="shop.html" class="hover:text-gray-400">Shop</a></li>
+            <li id="mobile-about-link"><a href="about.html" class="hover:text-gray-400">About</a></li>
+            <li id="mobile-contact-link"><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden z-10 md:hidden"></div>
+
+    <main class="mx-20 max-lg:mx-4 my-20">
+        <p class="font-franklin text-[20px] mb-20">Shop > Coes Desk Lamp</p>
+        <div id="boulevard-table" class="flex justify-between max-lg:flex-col">
+            <img src="https://images.squarespace-cdn.com/content/v1/624b503a454ebf5dd6842158/1649102913360-YHL5BB9D5607IEXQ5UW6/Stocksy_comp_1772277.jpg"
+                alt="boulevard-table" class="w-[55em] h-[70em] max-lg:h-[30em] object-cover">
+            <div id="boulevard-table-info" class="font-franklin text-[20px]">
+                <h3 class="text-[60px] max-lg:text-[30px] font-bebas">Coes Desk Lamp</h3>
+                <p class="font-semibold text-[120px] font-bebas max-lg:text-[80px]">$145.0</p>
+                <p class="pb-20">This is a piece of furniture. Designed with both form and function in mind, this piece
+                    will feel<br>
+                    right at home in your space.<br>
+                    <br>16” H x 11” W x 9” D
+                </p>
+                <button id="add-to-cart-btn" type="submit"
+                    class="max-lg:py-2 max-lg:px-12 mt-6 py-8 px-96 text-lg font-semibold text-white transition-colors duration-300 bg-[#b1b1b1] hover:bg-white hover:border hover:border-black hover:text-black">Add
+                    to Cart</button>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="bg-[#b6b6b6] flex justify-between pt-20 pb-20 max-lg:flex-col">
+        <h2 id="footer-logo" class="ml-20 text-[60px] font-bebas max-lg:text-center max-lg:ml-0 max-lg:text-[40px]">
+            camdez furniture</h2>
+        <div id="footer-links"
+            class="flex lg:mr-20 font-franklin text-[18px] underline text-[#5f5f5f] gap-8 max-lg:justify-center">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="">Follow</a>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
