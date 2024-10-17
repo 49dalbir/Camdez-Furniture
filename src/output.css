@@ -554,40 +554,6 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -624,6 +590,11 @@ video {
   float: left;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -632,16 +603,6 @@ video {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.mx-32 {
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .mb-20 {
@@ -742,10 +703,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[60em\] {
-  height: 60em;
 }
 
 .w-64 {
@@ -928,11 +885,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -989,6 +941,10 @@ video {
   padding-top: 2rem;
 }
 
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1010,8 +966,8 @@ video {
   line-height: 2rem;
 }
 
-.text-\[140px\] {
-  font-size: 140px;
+.text-\[120px\] {
+  font-size: 120px;
 }
 
 .text-\[16px\] {
@@ -1046,10 +1002,6 @@ video {
   font-size: 60px;
 }
 
-.text-\[70px\] {
-  font-size: 70px;
-}
-
 .text-\[80px\] {
   font-size: 80px;
 }
@@ -1064,8 +1016,12 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[120px\] {
-  font-size: 120px;
+.text-\[130px\] {
+  font-size: 130px;
+}
+
+.text-\[70px\] {
+  font-size: 70px;
 }
 
 .font-bold {
@@ -1320,10 +1276,6 @@ video {
     margin-top: 3.5rem;
   }
 
-  .max-lg\:flex {
-    display: flex;
-  }
-
   .max-lg\:hidden {
     display: none;
   }
@@ -1372,6 +1324,11 @@ video {
     gap: 1rem;
   }
 
+  .max-lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .max-lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1380,11 +1337,6 @@ video {
   .max-lg\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-
-  .max-lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .max-lg\:pt-20 {
@@ -1429,5 +1381,9 @@ video {
 
   .max-lg\:text-\[80px\] {
     font-size: 80px;
+  }
+
+  .max-lg\:text-\[50px\] {
+    font-size: 50px;
   }
 }
