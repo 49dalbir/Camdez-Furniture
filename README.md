@@ -21,5 +21,4 @@ This project was created to demonstrate an e-commerce website front end using HT
 - **Tailwind CSS**: Utility-first CSS framework to style the website.
 - **JavaScript**: Adds interactive features such as dynamic product filtering and cart functionality.
 
-## Project Structure
 
