@@ -1,6 +1,7 @@
 # Camdez Furniture - E-Commerce Website
 
-[![Website](https://img.shields.io/badge/Website-Visit-brightgreen)](https://49dalbir.github.io/Camdez-Furniture/)
+[![Visit Website](https://img.shields.io/badge/Website-Visit-1E90FF?style=for-the-badge&logo=googlechrome)](https://49dalbir.github.io/Camdez-Furniture/)
+
 
 Camdez Furniture is a front-end e-commerce website for a furniture store, designed using HTML, Tailwind CSS, and JavaScript. This project showcases a modern, responsive layout that provides a clean and simple shopping experience.
 
